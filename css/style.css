@@ -1,0 +1,128 @@
+@import url('../font/RAVIE.TTF');
+
+
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: ravie;
+}
+
+.sec{
+    display: grid;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+.sec01,
+.sec03,
+.sec04{
+    padding: 20%;
+}
+
+.sec01{
+    grid-template-areas: 
+                        "h h h h"
+                        "p p p p"
+                        "i i i i";
+    background-color: #F0FEE4;
+}
+
+.sec01 > .h{
+    grid-area: h;
+    color: #F15E45;
+    font-size: 13px;
+}
+
+.sec01 > .p{
+    grid-area: p;
+    color: #24333F;
+    font-size: 10px;
+}
+
+.sec01 > .image{
+    display: flex;
+    grid-area: i;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec01 > .image > img{
+    width: 40vw;
+}
+
+.sec02{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://lun-eu.icons8.com/a/1f2aFnPZTkqzu5kc9Bn6_g/JqxJOsF1sUGarRRvO3e72w/Teaching.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 150vw;
+}
+
+.sec02 > h1{
+    text-align: center;
+    color: #F0FEE4;
+    margin-bottom: 10%;
+}
+
+.sec02 > button{
+    width: 12vw;
+    height: 5vw;
+    border-radius: 5px;
+    font-family: ravie;
+    border: none;
+    background-color: #FEA0A1;
+    color: #24333F;
+}
+
+.sec02, 
+.sec03{
+    background-color: #F15E45;
+}
+
+.sec03{
+    grid-template-areas: 
+                        "h h h h"
+                        "p p p p"
+                        "i i i i";
+                        color: #F0FEE4;
+}
+
+
+.sec03 > .h{
+    grid-area: h;
+    font-size: 13px;
+}
+
+.sec03 > .p{
+    grid-area: p;
+    font-size: 10px;
+}
+
+.sec03 > .image{
+    display: flex;
+    grid-area: i;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec03 > .image > img{
+    width: 40vw;
+}
+
+.sec04{
+    background-color: #24333F;
+}
+
+.floater{
+    position: fixed;
+    right: 3vw;
+    top: 3vw;
+}
+
+.floater > svg{
+    width: 60px;
+}
