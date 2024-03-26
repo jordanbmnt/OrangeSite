@@ -1,39 +1,40 @@
 :root {
     --shadow-color: 0deg 0% 11%;
     --shadow-elevation-low:
-      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
-      0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
-      1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+        0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+        0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+        1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
     --shadow-elevation-medium:
-      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
-      0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
-      2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
-      5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+        0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+        0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+        2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+        5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
     --shadow-elevation-high:
-      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
-      1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
-      2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
-      4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
-      7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
-      11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
-      17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
-      25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
-  }
+        0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+        1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+        2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+        4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+        7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+        11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+        17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+        25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+}
+
 @import url('../font/RAVIE.TTF');
 
 
-body{
+body {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
     font-family: ravie;
 }
 
-h1{
+h1 {
     text-shadow: 2px 2px 3px rgb(162, 162, 162);
 }
 
-.sec{
+.sec {
     display: grid;
     min-height: 100vh;
     max-height: 100vh;
@@ -41,47 +42,47 @@ h1{
 }
 
 .sec01,
-.sec03{
+.sec03 {
     padding: 0 20%;
 }
 
-.sec01{
-    grid-template-areas: 
-                        "h h h h"
-                        "p p p p"
-                        "i i i i";
+.sec01 {
+    grid-template-areas:
+        "h h h h"
+        "p p p p"
+        "i i i i";
     background-color: #F0FEE4;
 }
 
-.sec01 > .h{
+.sec01>.h {
     grid-area: h;
     color: #F15E45;
     font-size: 13px;
     margin: auto;
 }
 
-.sec01 > .p{
+.sec01>.p {
     grid-area: p;
     color: #24333F;
     font-size: 10px;
     margin: auto;
 }
 
-.sec01 > .image{
+.sec01>.image {
     display: flex;
     grid-area: i;
     justify-content: center;
     align-items: center;
 }
 
-.sec01 > .image > img,
-.sec03 > .image > img,
-.sec04 > .image > img{
+.sec01>.image>img,
+.sec03>.image>img,
+.sec04>.image>img {
     width: 40vw;
     max-width: 500px;
 }
 
-.sec02{
+.sec02 {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -92,13 +93,13 @@ h1{
     background-size: 100vh;
 }
 
-.sec02 > h1{
+.sec02>h1 {
     text-align: center;
     color: #F0FEE4;
     margin-bottom: 10%;
 }
 
-.sec02 > button{
+.sec02>button {
     width: 100px;
     height: 50px;
     border-radius: 5px;
@@ -109,40 +110,40 @@ h1{
     box-shadow: var(--shadow-elevation-medium);
 }
 
-.sec02, 
-.sec03{
+.sec02,
+.sec03 {
     background-color: #F15E45;
 }
 
-.sec03{
-    grid-template-areas: 
-                        "h h h h"
-                        "p p p p"
-                        "i i i i";
-                        color: #F0FEE4;
+.sec03 {
+    grid-template-areas:
+        "h h h h"
+        "p p p p"
+        "i i i i";
+    color: #F0FEE4;
 }
 
 
-.sec03 > .h{
+.sec03>.h {
     grid-area: h;
     font-size: 13px;
     margin: auto;
 }
 
-.sec03 > .p{
+.sec03>.p {
     grid-area: p;
     font-size: 10px;
     margin: auto;
 }
 
-.sec03 > .image{
+.sec03>.image {
     display: flex;
     grid-area: i;
     justify-content: center;
     align-items: center;
 }
 
-.sec04{
+.sec04 {
     display: flex;
     flex-flow: column;
     color: #F0FEE4;
@@ -151,32 +152,33 @@ h1{
     align-items: center;
 }
 
-.sec04 > h1{
+.sec04>h1 {
     text-align: center;
 }
 
-footer{
+footer {
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
     background-color: #24333F;
     color: #F0FEE4;
-    padding: 3vw;
+    padding: 20px 30px;
 }
 
-.floater{
+.floater {
+    perspective: 1000px;
     position: fixed;
     right: 3vw;
     top: 3vw;
 }
 
-.floater > svg{
+.floater>svg {
     width: 60px;
     transition: ease-in-out;
 }
 
-.viewer{
+.viewer {
     position: fixed;
     left: 0;
     top: 0;
@@ -187,16 +189,18 @@ footer{
 }
 
 @media only screen and (min-width: 780px) {
+
     .sec01,
-    .sec03{
-        grid-template-areas: 
-                            "h h i i"
-                            "p p i i"
-                            "p p i i";
+    .sec03 {
+        grid-template-areas:
+            "h h i i"
+            "p p i i"
+            "p p i i";
 
     }
-    .sec01 > .p,
-    .sec03 > .p{
+
+    .sec01>.p,
+    .sec03>.p {
         margin: 0;
     }
 
