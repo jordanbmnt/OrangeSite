@@ -34,6 +34,23 @@ h1 {
     text-shadow: 2px 2px 3px rgb(162, 162, 162);
 }
 
+.menu {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ee5b3c;
+    color: #24333F;
+    opacity: 0;
+    display: none;
+}
+
+.menu>ul {
+    list-style-type: none;
+}
+
 .sec {
     display: grid;
     min-height: 100vh;

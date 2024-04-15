@@ -1,7 +1,7 @@
 const floater = document.getElementById("Ellipse");
 const sec01 = document.getElementsByClassName("sec01");
 const sec04 = document.getElementsByClassName("sec04");
-console.log(sec01);
+const menu = document.getElementsByClassName("menu");
 
 window.addEventListener(
   "scroll",
@@ -21,3 +21,8 @@ window.addEventListener(
   },
   0.1
 );
+
+floater.addEventListener("click", () => {
+  menu[0].style.display = "none" ? "flex" : "none";
+  menu[0].style.opacity = 1;
+});
